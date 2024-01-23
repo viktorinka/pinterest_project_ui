@@ -1,0 +1,22 @@
+plugins {
+    id 'java-library'
+    id 'io.qameta.allure' version '2.11.2'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation (
+            "com.codeborne:selenide:6.19.1",
+            "org.junit.jupiter:junit-jupiter:5.9.2",
+            "org.slf4j:slf4j-simple:2.0.6",
+            "io.qameta.allure:allure-selenide:2.19.0",
+            "com.github.javafaker:javafaker:1.0.2"
+    )
+}
+
+test {
+    useJUnitPlatform()
+}
