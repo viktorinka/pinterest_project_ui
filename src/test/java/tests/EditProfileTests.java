@@ -2,10 +2,12 @@ package tests;
 
 import helpers.TestData;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.AuthorizationPage;
 import pages.ProfilePage;
 
+@Tag("smoke")
 
 public class EditProfileTests extends TestBase {
     AuthorizationPage authorizationPage = new AuthorizationPage();

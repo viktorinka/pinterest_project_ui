@@ -2,10 +2,12 @@ package tests;
 
 import helpers.TestData;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.AuthorizationPage;
 import pages.PinPage;
 
+@Tag("smoke")
 public class PinTests extends TestBase {
     AuthorizationPage authorizationPage = new AuthorizationPage();
     PinPage pinPage = new PinPage();
