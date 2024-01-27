@@ -27,7 +27,7 @@ public class AuthorizationTests extends TestBase{
                 .fillFieldEmail(TestData.email)
                 .fillFieldPassword("1111111")
                 .clickButtonSubmit()
-                .checkAlert("Вы ввели неправильный пароль. Повторите попытку или Сбросить пароль");
+                .checkAlert("The password you entered is incorrect. Try again or Reset your password");
     }
 
     @Test
@@ -37,6 +37,6 @@ public class AuthorizationTests extends TestBase{
                 .fillFieldEmail("")
                 .fillFieldPassword("")
                 .clickButtonSubmit()
-                .checkAlert("Вы кое-что забыли! Укажите свой адрес электронной почты.");
+                .checkAlert("You missed a spot! Don't forget to add your email.");
     }
 }
