@@ -14,8 +14,8 @@ public class AuthorizationTests extends TestBase{
     @DisplayName("Successful authorization")
     void authorizationSuccessful(){
         authorizationPage.clickButtonLogin()
-                .fillFieldEmail(TestData.email)
-                .fillFieldPassword(TestData.password)
+                .fillEmail(TestData.email)
+                .fillPassword(TestData.password)
                 .clickButtonSubmit()
                 .checkAccount(TestData.email);
     }
@@ -24,8 +24,8 @@ public class AuthorizationTests extends TestBase{
     @DisplayName("Unsuccessful authorization with wrong password")
     void authorizationWithWrongPassword(){
         authorizationPage.clickButtonLogin()
-                .fillFieldEmail(TestData.email)
-                .fillFieldPassword("1111111")
+                .fillEmail(TestData.email)
+                .fillPassword("1111111")
                 .clickButtonSubmit()
                 .checkAlert("The password you entered is incorrect. Try again or Reset your password");
     }
@@ -34,8 +34,8 @@ public class AuthorizationTests extends TestBase{
     @DisplayName("Unsuccessful authorization with empty credentials")
     void authorizationWithEmptyCredentials(){
         authorizationPage.clickButtonLogin()
-                .fillFieldEmail("")
-                .fillFieldPassword("")
+                .fillEmail("")
+                .fillPassword("")
                 .clickButtonSubmit()
                 .checkAlert("You missed a spot! Don't forget to add your email.");
     }

@@ -16,13 +16,13 @@ public class AuthorizationPage extends TestBase {
     }
 
     @Step("Set field email")
-    public AuthorizationPage fillFieldEmail(String email) {
+    public AuthorizationPage fillEmail(String email) {
         $("#email").setValue(email);
         return this;
     }
 
     @Step("Set field password")
-    public AuthorizationPage fillFieldPassword(String password) {
+    public AuthorizationPage fillPassword(String password) {
         $("#password").setValue(password);
         return this;
     }
@@ -49,8 +49,8 @@ public class AuthorizationPage extends TestBase {
     @Step("Authorization user")
     public void authorizationUser(String email, String password, String emailAccount) {
         clickButtonLogin();
-        fillFieldEmail(email);
-        fillFieldPassword(password);
+        fillEmail(email);
+        fillPassword(password);
         clickButtonSubmit();
         checkAccount(emailAccount);
     }
