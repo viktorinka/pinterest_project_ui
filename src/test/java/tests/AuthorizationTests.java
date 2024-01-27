@@ -20,23 +20,23 @@ public class AuthorizationTests extends TestBase{
                 .checkAccount(TestData.email);
     }
 
-//    @Test
-//    @DisplayName("Unsuccessful authorization with wrong password")
-//    void authorizationWithWrongPassword(){
-//        authorizationPage.clickButtonLogin()
-//                .fillFieldEmail(TestData.email)
-//                .fillFieldPassword("1111111")
-//                .clickButtonSubmit()
-//                .checkAlert("Вы ввели неправильный пароль. Повторите попытку или Сбросить пароль");
-//    }
-//
-//    @Test
-//    @DisplayName("Unsuccessful authorization with empty credentials")
-//    void authorizationWithEmptyCredentials(){
-//        authorizationPage.clickButtonLogin()
-//                .fillFieldEmail("")
-//                .fillFieldPassword("")
-//                .clickButtonSubmit()
-//                .checkAlert("Вы кое-что забыли! Укажите свой адрес электронной почты.");
-//    }
+    @Test
+    @DisplayName("Unsuccessful authorization with wrong password")
+    void authorizationWithWrongPassword(){
+        authorizationPage.clickButtonLogin()
+                .fillFieldEmail(TestData.email)
+                .fillFieldPassword("1111111")
+                .clickButtonSubmit()
+                .checkAlert("Вы ввели неправильный пароль. Повторите попытку или Сбросить пароль");
+    }
+
+    @Test
+    @DisplayName("Unsuccessful authorization with empty credentials")
+    void authorizationWithEmptyCredentials(){
+        authorizationPage.clickButtonLogin()
+                .fillFieldEmail("")
+                .fillFieldPassword("")
+                .clickButtonSubmit()
+                .checkAlert("Вы кое-что забыли! Укажите свой адрес электронной почты.");
+    }
 }
