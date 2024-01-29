@@ -6,10 +6,10 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.AuthorizationPage;
 
-@Tag("smoke")
 public class AuthorizationTests extends TestBase{
     AuthorizationPage authorizationPage = new AuthorizationPage();
 
+    @Tag("smoke")
     @Test
     @DisplayName("Successful authorization")
     void authorizationSuccessful(){

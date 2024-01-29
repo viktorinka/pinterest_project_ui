@@ -9,15 +9,23 @@ import org.junit.jupiter.params.provider.CsvSource;
 import pages.AuthorizationPage;
 import pages.ProfilePage;
 
-@Tag("smoke")
-
 public class ProfileTests extends TestBase {
     AuthorizationPage authorizationPage = new AuthorizationPage();
     ProfilePage profilePage = new ProfilePage();
 
+    @Tag("smoke")
+    @DisplayName("Search profile")
+    @ParameterizedTest
+    @CsvSource(value = {"We Love Cats and Kittens, catsandkittys",
+            "Dogs Trust, dogstrust"})
+    void searchProfile(String value, String expectText) {
+        profilePage.clickExplore()
+                .fillSearch(value)
+                .checkProfile(expectText);
+    }
 
     @Test
-    @DisplayName("Edite profile")
+    @DisplayName("Success edite profile")
     void editeProfile() {
         authorizationPage.authorizationUser(TestData.email, TestData.password, TestData.email);
         profilePage.openEditProfile()
@@ -34,22 +42,12 @@ public class ProfileTests extends TestBase {
     }
 
     @Test
-    @DisplayName("Check error messages")
-    void checkErrorMessages() {
+    @DisplayName("Edite profile with empty required fields")
+    void editeProfileWithEmptyRequiredFields() {
         authorizationPage.authorizationUser(TestData.email, TestData.password, TestData.email);
         profilePage.openEditProfile()
                 .clearFields()
                 .checkErrorBusinessName("Your profile needs a name")
                 .checkErrorUsername("Your profile needs a username");
-    }
-
-    @DisplayName("Search profile")
-    @ParameterizedTest
-    @CsvSource(value = {"We Love Cats and Kittens, catsandkittys",
-                        "Dogs Trust, dogstrust"})
-    void searchProfile(String value, String expectText) {
-        profilePage.clickExplore()
-                .fillSearch(value)
-                .checkProfile(expectText);
     }
 }

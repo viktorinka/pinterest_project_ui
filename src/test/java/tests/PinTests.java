@@ -7,11 +7,11 @@ import org.junit.jupiter.api.Test;
 import pages.AuthorizationPage;
 import pages.PinPage;
 
-@Tag("smoke")
 public class PinTests extends TestBase {
     AuthorizationPage authorizationPage = new AuthorizationPage();
     PinPage pinPage = new PinPage();
 
+    @Tag("smoke")
     @Test
     @DisplayName("Create pin")
     void createPin() {

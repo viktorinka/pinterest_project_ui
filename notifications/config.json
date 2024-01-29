@@ -1,10 +1,10 @@
 {
   "base": {
     "logo": "",
-    "project": "${JOB_NAME}",
+    "project": "test",
     "environment": "test",
     "comment": "see @dzherommo",
-    "reportLink": "${BUILD_URL}",
+    "reportLink": "https://jenkins.autotests.cloud",
     "language": "en",
     "allureFolder": "allure-report",
     "enableChart": true
