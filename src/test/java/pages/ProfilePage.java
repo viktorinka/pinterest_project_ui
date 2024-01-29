@@ -104,8 +104,28 @@ public class ProfilePage extends TestBase {
         return this;
     }
 
-    @Step("Check error business name")
-    public void checkErrorUsername(String error) {
+    @Step("Check error user name")
+    public ProfilePage checkErrorUsername(String error) {
         $("#username-error").shouldHave(Condition.text(error));
+        return this;
+    }
+
+    @Step("Click Explore")
+    public ProfilePage clickExplore() {
+        open("");
+        $("[data-test-id=unauth-header]").$(byText("Explore")).click();
+        return this;
+    }
+
+    @Step("Fill search")
+    public ProfilePage fillSearch(String value) {
+        $("[data-test-id=search-box-input]").setValue(value);
+        $("[data-test-id=enriched-search-suggestion]").hover().click();
+        return this;}
+
+    @Step("Check profile")
+    public ProfilePage checkProfile(String expectedText) {
+        $("[data-test-id=profile-header]").shouldHave(Condition.text(expectedText));
+        return this;
     }
 }

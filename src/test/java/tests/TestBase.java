@@ -8,6 +8,7 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.util.Map;
@@ -15,7 +16,7 @@ import java.util.Map;
 public class TestBase {
     @BeforeAll
     static void beforeAll() {
-        Configuration.baseUrl = System.getProperty("baseUrl", "https://ru.pinterest.com/");
+        Configuration.baseUrl = System.getProperty("baseUrl", "https://pinterest.com/");
         Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.browserVersion = System.getProperty("browserVersion", "100.0");
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
