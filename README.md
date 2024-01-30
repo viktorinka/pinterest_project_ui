@@ -143,6 +143,7 @@ After the build is completed, a special bot created in <code>Telegram</code>, au
 </p>
 
 <a id="Selenoid">
+  
 ## <img width="5%" src="media/selenoid-logo.svg"> Test running example in Selenoid
 
 A video is attached to each test in the report.
