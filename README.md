@@ -9,9 +9,10 @@
 
 * <a href="#Description">Description</a>
 * <a href="#Technology">Tools and technologies</a>
+* <a href="#HowToRun">How to run</a>
+* <a href="#AllureReport">Test results report in Allure Report</a>
 
-+ [How to run](#HowToRun)
-+ [Test results report in Allure Report](#AllureReport)
+
 + [Allure TestOps integration](#AllureTestOps)
     + [Project in Allure TestOps](#AllureTestOpsProject)
     + [Start a run of custom set of tests](#AllureTestOpsStartTests)
@@ -74,7 +75,8 @@ The autotests in this project are written in `Java` using `Selenide` framework.\
 `Telegram Bot` - for test results notifications.\
 `Allure TestOps` - as Test Management System.
 
-# :computer: <a name="HowToRun">How to run</a>
+<a id="HowToRun"></a>
+# :computer: How to run
 
 ### Local running tests
 
@@ -102,7 +104,9 @@ First you need to click on the <code><strong>*Collect with parameters*</strong><
 After build is completed, in the <code><strong>*Builds history*</strong></code> opposite the build number will appear
 the *Allure Report* icon, clicking on which will open the page with the generated html-report.
 
-## <img width="5%" src="media/allure-Report-logo.svg"> <a name="Allure Report">Test results report in [Allure Report](https://jenkins.autotests.cloud/job/pinterest_project_ui/19/allure/)</a>
+<a id="Allure Report">
+  
+## <img width="5%" src="media/allure-Report-logo.svg"> Test results report in [Allure Report](https://jenkins.autotests.cloud/job/pinterest_project_ui/19/allure/)
 
 <p align="center">
   <img src="media/allure-report_1.png" alt="allure-report1" width="900">
