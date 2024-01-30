@@ -139,7 +139,7 @@ the *Allure Report* icon, clicking on which will open the page with the generate
 After the build is completed, a special bot created in <code>Telegram</code>, automatically processes and sends a test run report message.
 
 <p align="center">
-<img title="Telegram Notifications" src="media/telegram.png">
+<img src="media/telegram.png">
 </p>
 
 <a id="Selenoid">
@@ -149,5 +149,5 @@ After the build is completed, a special bot created in <code>Telegram</code>, au
 A video is attached to each test in the report.
 
 <p align="center">
-  <img title="Selenoid Video" src="media/video.gif">
+  <img src="media/video.gif">
 </p>
