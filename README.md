@@ -7,7 +7,7 @@
 
 # :open_file_folder: <a name="TableOfContents">Table of contents</a>
 
-
+* <a href="#Description">Description</a>
 - [Description](#Description)
 + [Description](#Description)
 + [Tools and technologies](#Technology)
@@ -22,6 +22,7 @@
 + [Telegram Notifications](#TelegramNotifications)
 + [Video of running tests](#Video)
 
+<a id="Description"></a>
 # :bulb: <a name="Description">Description</a>
 # :bulb: Description
 The test project consists of Web, API and mobile(android) tests.\
