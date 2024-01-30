@@ -8,9 +8,8 @@
 # :open_file_folder: <a name="TableOfContents">Table of contents</a>
 
 * <a href="#Description">Description</a>
-- [Description](#Description)
-+ [Description](#Description)
-+ [Tools and technologies](#Technology)
+* <a href="#Technology">Tools and technologies</a>
+
 + [How to run](#HowToRun)
 + [Test results report in Allure Report](#AllureReport)
 + [Allure TestOps integration](#AllureTestOps)
@@ -23,7 +22,6 @@
 + [Video of running tests](#Video)
 
 <a id="Description"></a>
-
 # :bulb: Description
 The test project consists of Web, API and mobile(android) tests.\
 A brief list of interesting facts about the project:
@@ -43,7 +41,8 @@ A brief list of interesting facts about the project:
 - [x] `Jira` integration
 - [x] Parallel execution
 
-# :technologist: <a name="Technology">Tools and a technologies</a>
+<a id="Technology"></a>
+# :technologist: Tools and a technologies
 <p  align="center">
   <code><img width="5%" title="IntelliJ IDEA" src="media/IDEA-logo.svg"></code>
   <code><img width="5%" title="Java" src="media/java-original-wordmark.svg"></code>
