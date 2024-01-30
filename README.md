@@ -14,7 +14,7 @@
 * <a href="#AllureTestOps">Allure TestOps integration</a>
 * <a href="#Jira">Jira integration</a>
 * <a href="#Telegram">Telegram Notifications</a>
-* <a href="#Video">Video of running tests</a>
+* <a href="#Selenoid">Video of running tests in Selenoid</a>
 
 <a id="Description"></a>
 # :bulb: Description
