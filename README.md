@@ -11,16 +11,10 @@
 * <a href="#Technology">Tools and technologies</a>
 * <a href="#HowToRun">How to run</a>
 * <a href="#AllureReport">Test results report in Allure Report</a>
-
-
-+ [Allure TestOps integration](#AllureTestOps)
-    + [Project in Allure TestOps](#AllureTestOpsProject)
-    + [Start a run of custom set of tests](#AllureTestOpsStartTests)
-    + [Dashboards](#Dashboards)
-    + [Defects](#Defects)
-+ [Jira integration](#Jira)
-+ [Telegram Notifications](#TelegramNotifications)
-+ [Video of running tests](#Video)
+* <a href="#AllureTestOps">Allure TestOps integration</a>
+* <a href="#Jira">Jira integration</a>
+* <a href="#Telegram">Telegram Notifications</a>
+* <a href="#Video">Video of running tests</a>
 
 <a id="Description"></a>
 # :bulb: Description
@@ -115,7 +109,9 @@ the *Allure Report* icon, clicking on which will open the page with the generate
   <img src="media/allure-report_2.png" alt="allure-report1" width="900">
 </p>
 
-## <img width="5%" title="Allure TestOPS" src="media/allure-ee-logo.svg"> Integration with [Allure TestOps](https://allure.autotests.cloud/launch/35037)
+<a id="AllureTestOPS">
+  
+## <img width="5%" src="media/allure-ee-logo.svg"> Integration with [Allure TestOps](https://allure.autotests.cloud/launch/35037)
 
 ### Main dashboard
 
@@ -129,20 +125,25 @@ the *Allure Report* icon, clicking on which will open the page with the generate
   <img src="media/allure-tops_1.png" alt="testresults" width="900">
 </p>
 
-## <img width="5%" title="Jira" src="media/jira-logo.svg"> Integration with [Jira](https://jira.autotests.cloud/browse/HOMEWORK-1089)
+<a id="Jira">
+  
+## <img width="5%" src="media/jira-logo.svg"> Integration with [Jira](https://jira.autotests.cloud/browse/HOMEWORK-1089)
 
 <p align="center">
   <img src="media/jira.png" alt="jira" width="900">
 </p>
 
-## <img width="5%" title="Telegram" src="media/Telegram.svg"> Telegram notifications using a bot
+<a id="Telegram">
+  
+## <img width="5%" src="media/Telegram.svg"> Telegram notifications using a bot
 After the build is completed, a special bot created in <code>Telegram</code>, automatically processes and sends a test run report message.
 
 <p align="center">
 <img title="Telegram Notifications" src="media/telegram.png">
 </p>
 
-## <img width="5%" title="Selenoid" src="media/selenoid-logo.svg"> Test running example in Selenoid
+<a id="Selenoid">
+## <img width="5%" src="media/selenoid-logo.svg"> Test running example in Selenoid
 
 A video is attached to each test in the report.
 
