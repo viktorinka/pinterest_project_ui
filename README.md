@@ -7,6 +7,8 @@
 
 # :open_file_folder: <a name="TableOfContents">Table of contents</a>
 
+
+- [Description](#Description)
 + [Description](#Description)
 + [Tools and technologies](#Technology)
 + [How to run](#HowToRun)
@@ -21,6 +23,7 @@
 + [Video of running tests](#Video)
 
 # :bulb: <a name="Description">Description</a>
+# :bulb: Description
 The test project consists of Web, API and mobile(android) tests.\
 A brief list of interesting facts about the project:
 - [x] `Page Object` with steps using `Chain of Invocations`
