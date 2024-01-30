@@ -104,7 +104,7 @@ First you need to click on the <code><strong>*Collect with parameters*</strong><
 After build is completed, in the <code><strong>*Builds history*</strong></code> opposite the build number will appear
 the *Allure Report* icon, clicking on which will open the page with the generated html-report.
 
-<a id="Allure Report">
+<a id="AllureReport">
   
 ## <img width="5%" src="media/allure-Report-logo.svg"> Test results report in [Allure Report](https://jenkins.autotests.cloud/job/pinterest_project_ui/19/allure/)
 
