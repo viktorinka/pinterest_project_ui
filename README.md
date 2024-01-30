@@ -6,28 +6,21 @@
 > Pinterest is social Internet service, photo hosting, allowing users to add images online, place them in thematic collections and share them with other users.
 
 # :open_file_folder: <a name="TableOfContents">Table of contents</a>
-* <a href="#Description">Description</a>
-- [Description](#Description)
+
 + [Description](#Description)
 + [Tools and technologies](#Technology)
-+ [How to run](#Jenkins)
-    + [Gradle command](#GradleCommand)
-    + [Property files](#PropertyFiles)
-      + [Default property files](#PropertyFilesDefaults)
-    + [Run in Jenkins](#RunInJenkins)
-+ [Telegram Notifications](#TelegramNotifications)
++ [How to run](#HowToRun)
 + [Test results report in Allure Report](#AllureReport)
 + [Allure TestOps integration](#AllureTestOps)
     + [Project in Allure TestOps](#AllureTestOpsProject)
     + [Start a run of custom set of tests](#AllureTestOpsStartTests)
     + [Dashboards](#Dashboards)
     + [Defects](#Defects)
-+ [GitHub webhooks](#GithubWebhooks)
 + [Jira integration](#Jira)
++ [Telegram Notifications](#TelegramNotifications)
 + [Video of running tests](#Video)
 
- <a id="Description"></a>
-# :bulb: Description
+# :bulb: <a name="Description">Description</a>
 The test project consists of Web, API and mobile(android) tests.\
 A brief list of interesting facts about the project:
 - [x] `Page Object` with steps using `Chain of Invocations`
@@ -95,7 +88,7 @@ gradle clean test
 -DbrowserSize=${BROWSER_SIZE}
 -Dremote=${SERVER_REMOTE}
 ```
-## <img width="5%" title="Jenkins" src="media/jenkins-logo.svg"> Running tests in [Jenkins](https://jenkins.autotests.cloud/job/pinterest_project_ui/)
+### <img width="5%" src="media/jenkins-logo.svg"> Running tests in [Jenkins](https://jenkins.autotests.cloud/job/pinterest_project_ui/)
 
 First you need to click on the <code><strong>*Collect with parameters*</strong></code> button and set options. By clicking on the <code><strong>*Collect*</strong></code> button a build will be started.
 
@@ -106,7 +99,7 @@ First you need to click on the <code><strong>*Collect with parameters*</strong><
 After build is completed, in the <code><strong>*Builds history*</strong></code> opposite the build number will appear
 the *Allure Report* icon, clicking on which will open the page with the generated html-report.
 
-## <img width="5%" title="Allure Report" src="media/allure-Report-logo.svg"> Test results report in [Allure Report](https://jenkins.autotests.cloud/job/pinterest_project_ui/19/allure/)
+## <img width="5%" src="media/allure-Report-logo.svg"> <a name="Allure Report">Test results report in [Allure Report](https://jenkins.autotests.cloud/job/pinterest_project_ui/19/allure/)</a>
 
 <p align="center">
   <img src="media/allure-report_1.png" alt="allure-report1" width="900">
