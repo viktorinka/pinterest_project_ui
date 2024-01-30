@@ -23,7 +23,7 @@
 + [Video of running tests](#Video)
 
 <a id="Description"></a>
-# :bulb: <a name="Description">Description</a>
+
 # :bulb: Description
 The test project consists of Web, API and mobile(android) tests.\
 A brief list of interesting facts about the project:
