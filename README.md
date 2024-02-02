@@ -75,17 +75,17 @@ The autotests in this project are written in `Java` using `Selenide` framework.\
 ### Local running tests
 
 ```bash
-gradle clean test
+./gradlew clean smoke_test -Denv=local
 ```
 
 ### Remote running tests
 
 ```bash
-gradle clean test
+./gradlew clean smoke_test -Denv=remote
+
 -Dbrowser=${BROWSER}
 -DbrowserVersion=${BROWSER_VERSION}
 -DbrowserSize=${BROWSER_SIZE}
--Dremote=${SERVER_REMOTE}
 ```
 ### <img width="5%" src="media/jenkins-logo.svg"> Running tests in [Jenkins](https://jenkins.autotests.cloud/job/pinterest_project_ui/)
 
