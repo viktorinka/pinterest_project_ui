@@ -1,10 +1,14 @@
 package helpers;
 
 import com.github.javafaker.Faker;
+import config.AuthConfig;
+import static org.aeonbits.owner.ConfigFactory.create;
 
 public class TestData {
-    public static String email = "dzherommo@gmail.com";
-    public static String password = "496188@COM";
+    private static AuthConfig authConfig = create(AuthConfig.class, System.getProperties());
+
+    final public static String email = authConfig.email(),
+            password = authConfig.password();
     public static String countryCode = "Russian Federation (+7)";
     public static String number = ("9824918041");
     static Faker faker = new Faker();
