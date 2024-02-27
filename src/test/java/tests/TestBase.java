@@ -12,11 +12,13 @@ import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.util.Map;
-import static org.aeonbits.owner.ConfigFactory.*;
+
+import static org.aeonbits.owner.ConfigFactory.create;
 
 public class TestBase {
     private static final WebDriverConfig webDriverConfig = create(WebDriverConfig.class, System.getProperties());
     protected static boolean isRemote = Boolean.getBoolean("isRemote");
+
     @BeforeAll
     static void beforeAll() {
         Configuration.baseUrl = webDriverConfig.baseUrl();
@@ -31,7 +33,6 @@ public class TestBase {
                     "enableVNC", true,
                     "enableVideo", true
             ));
-
             Configuration.browserCapabilities = capabilities;
         }
     }
