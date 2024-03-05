@@ -34,7 +34,7 @@ A brief list of interesting facts about the project:
 <p  align="center">
   <code><img width="5%" title="IntelliJ IDEA" src="media/IDEA-logo.svg"></code>
   <code><img width="5%" title="Java" src="media/java-original-wordmark.svg"></code>
-  <code><img width="5%" title="Selenide" src="../pinterest_project_mobile/media/logo/selenide-logo.svg"></code>
+  <code><img width="5%" title="Selenide" src="media/selenide-logo.png"></code>
   <code><img width="5%" title="Selenoid" src="media/selenoid-logo.svg"></code>
   <code><img width="5%" title="Gradle" src="media/gradle-logo.svg"></code>
   <code><img width="5%" title="JUnit5" src="media/junit5-logo.svg"></code>
