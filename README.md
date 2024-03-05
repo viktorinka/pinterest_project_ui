@@ -18,31 +18,23 @@
 
 <a id="Description"></a>
 # :bulb: Description
-The test project consists of Web, API and mobile(android) tests.\
+The test project consists of Web tests.\
 A brief list of interesting facts about the project:
 - [x] `Page Object` with steps using `Chain of Invocations`
 - [x] Fake data generating with `Faker` library
 - [x] Parametrized tests
-- [x] Parametrized build
 - [x] Different configuration files for test running depending on build parameters
 - [x] Config with `Owner` library
-- [x] Using `Lombok` for models for API tests
-- [x] Objects serialization/deserialization for API requests/responses using `Jackson`
-- [x] Using request/response specifications for API tests
-- [x] Custom Allure listener for beautiful API requests/responses logging
 - [x] `Allure TestOps` integration
-- [x] Autotests as test documentation
-- [x] `Github webhooks` on each push to trigger `Jenkins` build
+- [x] `Jenkins` runs tests
 - [x] `Jira` integration
-- [x] Parallel execution
 
 <a id="Technology"></a>
 # :technologist: Tools and a technologies
 <p  align="center">
   <code><img width="5%" title="IntelliJ IDEA" src="media/IDEA-logo.svg"></code>
   <code><img width="5%" title="Java" src="media/java-original-wordmark.svg"></code>
-  <code><img width="5%" title="Selenide" src="media/selenide-logo.svg"></code>
-  <code><img width="5%" title="REST-Assured" src="media/rest-assured-logo.svg"></code>
+  <code><img width="5%" title="Selenide" src="../pinterest_project_mobile/media/logo/selenide-logo.svg"></code>
   <code><img width="5%" title="Selenoid" src="media/selenoid-logo.svg"></code>
   <code><img width="5%" title="Gradle" src="media/gradle-logo.svg"></code>
   <code><img width="5%" title="JUnit5" src="media/junit5-logo.svg"></code>
@@ -53,18 +45,14 @@ A brief list of interesting facts about the project:
   <code><img width="5%" title="Jira" src="media/jira-logo.svg"></code>
   <code><img width="5%" title="Telegram" src="media/Telegram.svg"></code>
   <code><img width="5%" title="Browserstack" src="media/browserstack.svg"></code>
-  <code><img width="5%" title="Android Studio" src="media/android.svg"></code>
-  <code><img width="5%" title="Appium" src="media/appium.svg"></code>
 </p>
 
 The autotests in this project are written in `Java` using `Selenide` framework.\
 `Gradle` - is used as a build automation tool.  \
 `JUnit5` - to execute tests.\
-`REST Assured` - for easy API testing of REST services.\
 `Jenkins` - CI/CD for running tests remotely.\
 `Selenoid` - to remote launching browsers in `Docker` containers.\
 `Browserstack` - to run mobile tests.\
-`Android Studio tools`, `Appium` - to tun mobile tests locally in a mobile device emulator.\
 `Allure Report` - for test results visualisation.\
 `Telegram Bot` - for test results notifications.\
 `Allure TestOps` - as Test Management System.
@@ -151,3 +139,5 @@ A video is attached to each test in the report.
 <p align="center">
   <img src="media/video.gif">
 </p>
+
+[back to Contents ⬆](#TableOfContents)
