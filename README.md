@@ -22,6 +22,7 @@ The test project consists of Web tests.\
 A brief list of interesting facts about the project:
 - [x] `Page Object` with steps using `Chain of Invocations`
 - [x] Fake data generating with `Faker` library
+- [x] Parametrized build
 - [x] Parametrized tests
 - [x] Different configuration files for test running depending on build parameters
 - [x] Config with `Owner` library
